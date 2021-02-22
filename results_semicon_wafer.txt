@@ -3,6 +3,7 @@ X = df['interarea_intercubic']
 
 model.evaluate(x=X_test, y=y_test)
 
+## these read as [loss, accuracy]
 [0.3620011806488037, 0.8793599009513855]
 
 
