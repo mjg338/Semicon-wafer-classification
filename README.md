@@ -17,3 +17,8 @@ Despite using more sophisticated NN's, they did not truly outperfom the models i
 While one of their models produces 92% testing accuracy, it is only managed with certain overtraining, as the training accuracy in that instance hit nearly 100%. 
 
 Given all this, I feel reasonably confident this model is near to complete optimization. 
+
+
+The initial wafer pickle required to run the semicon_p1.ipynb notebook can be downloaded here:
+
+https://drive.google.com/drive/folders/1b8WBaw4QhCtq8IEeodpqg2P_UMVSQ4sB?usp=sharing
