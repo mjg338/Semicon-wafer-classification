@@ -1,0 +1,137 @@
+X = df['interarea_intercubic']
+
+
+model.evaluate(x=X_test, y=y_test)
+
+## these read as [loss, accuracy]
+[0.3620011806488037, 0.8793599009513855]
+
+
+model.evaluate(x=X_train, y=y_train)
+
+[0.17561697959899902, 0.9397387504577637]
+
+
+model.evaluate(x=X_valid, y=y_valid)
+
+[0.35470831394195557, 0.8805000185966492]
+
+
+              precision    recall  f1-score   support
+
+           0       0.94      0.93      0.94      1060
+           1       0.95      0.98      0.97      1014
+           2       0.80      0.89      0.84       835
+           3       0.99      0.96      0.97      1016
+           4       0.79      0.74      0.76      1061
+           5       0.99      0.91      0.95       914
+           6       0.73      0.75      0.74       935
+           7       0.86      0.88      0.87      1164
+
+    accuracy                           0.88      7999
+   macro avg       0.88      0.88      0.88      7999
+weighted avg       0.88      0.88      0.88      7999
+
+
+
+
+X = df['interarea_interlinear']
+
+
+model.evaluate(x=X_test, y=y_test)
+
+[0.3931768238544464, 0.873609185218811]
+
+
+model.evaluate(x=X_train, y=y_train)
+
+[0.1768638789653778, 0.9390363693237305]
+
+
+model.evaluate(x=X_valid, y=y_valid)
+
+[0.38812872767448425, 0.8774999976158142]
+
+
+              precision    recall  f1-score   support
+
+           0       0.89      0.97      0.93      1060
+           1       0.96      0.95      0.95      1014
+           2       0.85      0.84      0.84       835
+           3       0.97      0.97      0.97      1016
+           4       0.78      0.77      0.78      1061
+           5       0.95      0.94      0.94       914
+           6       0.76      0.64      0.69       935
+           7       0.83      0.89      0.86      1164
+
+    accuracy                           0.87      7999
+   macro avg       0.87      0.87      0.87      7999
+weighted avg       0.87      0.87      0.87      7999
+
+
+
+
+X = df['interarea_interlinear_clean']
+
+
+model.evaluate(x=X_test, y=y_test)
+
+[0.43483760952949524, 0.8541067838668823]
+
+model.evaluate(x=X_train, y=y_train)
+
+[0.2861149311065674, 0.9004775881767273]
+
+model.evaluate(x=X_valid, y=y_valid)
+
+[0.4377799928188324, 0.8560000061988831]
+
+
+              precision    recall  f1-score   support
+
+           0       0.92      0.95      0.94      1060
+           1       0.95      0.92      0.93      1014
+           2       0.79      0.85      0.82       835
+           3       0.98      0.92      0.95      1016
+           4       0.72      0.79      0.75      1061
+           5       0.97      0.85      0.91       914
+           6       0.69      0.63      0.66       935
+           7       0.83      0.89      0.86      1164
+
+    accuracy                           0.85      7999
+   macro avg       0.86      0.85      0.85      7999
+weighted avg       0.86      0.85      0.85      7999
+
+
+
+
+X = df['interarea_intercubic_clean']
+
+
+model.evaluate(x=X_test, y=y_test)
+
+[0.407010555267334, 0.8703587651252747]
+
+model.evaluate(x=X_train, y=y_train)
+
+[0.2618024945259094, 0.9148054718971252]
+
+model.evaluate(x=X_valid, y=y_valid)
+
+[0.42013537883758545, 0.8644999861717224]
+
+
+              precision    recall  f1-score   support
+
+           0       0.93      0.96      0.94      1060
+           1       0.93      0.96      0.95      1014
+           2       0.90      0.77      0.83       835
+           3       0.95      0.95      0.95      1016
+           4       0.78      0.75      0.77      1061
+           5       0.95      0.93      0.94       914
+           6       0.67      0.73      0.70       935
+           7       0.87      0.88      0.87      1164
+
+    accuracy                           0.87      7999
+   macro avg       0.87      0.87      0.87      7999
+weighted avg       0.87      0.87      0.87      7999
