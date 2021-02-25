@@ -24,7 +24,7 @@ print(response.text)
 
 # Test POST name
 url = "http://0.0.0.0:5000/name?"
-payload={'name': 'demian'}
+payload={'name': 'Max'}
 response = requests.request("POST", url, data=payload )
 print(response.text)
 
