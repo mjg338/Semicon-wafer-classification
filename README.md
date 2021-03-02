@@ -25,3 +25,7 @@ Once the model was completed, I wrapped it in a flask app and containerized it i
 The initial wafer pickle required to run the semicon_p1.ipynb notebook can be downloaded here:
 
 https://drive.google.com/drive/folders/1b8WBaw4QhCtq8IEeodpqg2P_UMVSQ4sB?usp=sharing
+
+
+
+Update: working on getting uploaded as a public API
