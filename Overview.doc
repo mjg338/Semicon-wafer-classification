@@ -1,0 +1,12 @@
+Brief Overview:
+Before you can use the Docker-Container,
+you must first build the container with :
+	docker-compose build
+
+The first time it will take awhile to complete,
+once it completes, you start the container with
+	docker-compose up
+
+To test the api, open another terminal, and run the
+test script just like anyother python file. Alternatively
+you can also test it with curl or postman. Thats it!
