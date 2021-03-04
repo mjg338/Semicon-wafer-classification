@@ -12,14 +12,11 @@ There was a paper done by some students at Stanford, using the same dataset, whe
 
 http://cs230.stanford.edu/projects_fall_2019/posters/26259758.pdf
 
-Despite using more sophisticated NN's, they did not truly outperfom the models i've created here, and in fact my models outperform there models when considering prediction of the "local" fault type. This is primarily because i made sure to augment my sample base to have an even number of each fault type.
+Despite using more sophisticated NN's, they did not truly outperfom the models i've created here, and in fact my models outperform their models when considering prediction of the "local" fault type. This is primarily because i made sure to augment my sample base to have an even number of each fault type.
 
 While one of their models produces 92% testing accuracy, it is only managed with certain overtraining, as the training accuracy in that instance hit nearly 100%. 
 
 Given all this, I feel reasonably confident this model is near to complete optimization. 
-
-
-Once the model was completed, I wrapped it in a flask app and containerized it in Docker. It can now be run as a local API using the request form numpy2json.py
 
 
 The initial wafer pickle required to run the semicon_p1.ipynb notebook can be downloaded here:
