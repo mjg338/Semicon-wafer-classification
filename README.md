@@ -29,4 +29,4 @@ https://drive.google.com/drive/folders/1b8WBaw4QhCtq8IEeodpqg2P_UMVSQ4sB?usp=sha
 
 
 
-Update: working on getting uploaded as a public API
+UPDATE: Model is currently up on heroku, https://semicon-app.herokuapp.com/predict. Just save the my_matrix.json file to your console, and upload to the app for a prediction. 
