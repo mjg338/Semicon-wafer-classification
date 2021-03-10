@@ -1,5 +1,7 @@
 # Semicon-wafer-classification
 
+App: https://semicon-app.herokuapp.com/predict. Just save the my_matrix.json file to your console, and upload to the app for a prediction. This can be done for any of the wafers given in the original dataset, provided they've been saved as a .json.
+
 Here I use a convolutional neural net to classify semiconductor wafers by one of 8 fault types. The NN achieves an overall accuracy of about 88% using 40 epochs. More epochs will top the models out at 92% but with considerable overtraining. 
 
 The semicon wafers come in various size matrices, and have no depth. They are each characterized by one of eight fault types, and the pixel size ranges from about 100 to over 3000, so a few steps had to be taken to create an effective model. 
@@ -22,8 +24,3 @@ Given all this, I feel reasonably confident this model is near to complete optim
 The initial wafer pickle required to run the semicon_p1.ipynb notebook can be downloaded here:
 
 https://drive.google.com/drive/folders/1b8WBaw4QhCtq8IEeodpqg2P_UMVSQ4sB?usp=sharing
-
-
-
-
-Update: Model is currently up on heroku, https://semicon-app.herokuapp.com/predict. Just save the my_matrix.json file to your console, and upload to the app for a prediction. 
