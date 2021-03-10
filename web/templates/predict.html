@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='semicon.css')}}"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 style="margin-bottom: 0">Semicon</h1>
+    </header>
+    <div class="MainContainer" style="height: 410px">
+      <fieldset>
+        <legend>Model Predictor</legend>
+        <div class="ResultsContainer">
+          <h2>Prediction</h2>
+          <div style="display: flex">
+            <div style="width: 100%">
+              <table style="width: 100%">
+                <tr>
+                  <th>Center</th>
+                  <td>
+                    {% if prediction %} {{ prediction['Center'] }} {% endif %}
+                  </td>
+                </tr>
+                <tr>
+                  <th>Donut</th>
+                  <td>
+                    {% if prediction %} {{ prediction['Donut'] }} {% endif %}
+                  </td>
+                </tr>
+                <tr>
+                  <th>Edge-Loc</th>
+                  <td>
+                    {% if prediction %} {{ prediction['Edge-Loc'] }} {% endif %}
+                  </td>
+                </tr>
+                <tr>
+                  <th>Edge-Ring</th>
+                  <td>
+                    {% if prediction %} {{ prediction['Edge-Ring'] }} {% endif
+                    %}
+                  </td>
+                </tr>
+                <tr>
+                  <th>Loc</th>
+                  <td>{% if prediction %} {{prediction['Loc']}} {% endif %}</td>
+                </tr>
+                <tr>
+                  <th>Random</th>
+                  <td>
+                    {% if prediction %} {{prediction['Random']}} {% endif %}
+                  </td>
+                </tr>
+                <tr>
+                  <th>Scratch</th>
+                  <td>
+                    {% if prediction %} {{prediction['Scratch']}} {% endif %}
+                  </td>
+                </tr>
+                <tr>
+                  <th>None</th>
+                  <td>
+                    {% if prediction %} {{ prediction['None'] }} {% endif %}
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <form action="/" method="GET">
+            <div>
+              <br />
+              <button
+                style="
+                  margin-top: 4px;
+                  box-shadow: 0 1px 1px #ccc;
+                  border-radius: 4px;
+                "
+              >
+                Run Another Test
+              </button>
+            </div>
+          </form>
+        </div>
+      </fieldset>
+    </div>
+  </body>
+</html>

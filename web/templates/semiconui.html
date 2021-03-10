@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='semicon.css')}}"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 style="margin-bottom: 0">Semicon</h1>
+    </header>
+
+    <div class="MainContainer" style="height: 180px">
+      <fieldset>
+        <legend>Model Predictor</legend>
+        <div class="InputContainer">
+          <form action="/" method="POST" enctype="multipart/form-data">
+            <div>
+              <p>Select your image as a JSON file</p>
+              <input
+                type="file"
+                id="image"
+                name="image"
+                value="Select data..."
+              />
+              <br />
+            </div>
+            <div>
+              <button
+                style="
+                  margin-top: 4px;
+                  box-shadow: 0 1px 1px #ccc;
+                  border-radius: 4px;
+                "
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </fieldset>
+    </div>
+  </body>
+</html>
