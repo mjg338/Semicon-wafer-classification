@@ -1,0 +1,41 @@
+.MainContainer {
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  margin: 5px;
+  padding: 5px;
+  width: 600px;
+  height: 400px;
+}
+
+.InputContainer {
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  margin: 5px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.ResultsContainer {
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  margin-top: 100px;
+  margin: 5px;
+  padding: 5px;
+  height: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 50px;
+}
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+img {
+  padding-left: 20px;
+}
