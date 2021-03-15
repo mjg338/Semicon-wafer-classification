@@ -2,7 +2,7 @@
 
 App: https://semicon-app.herokuapp.com. Just save the my_matrix.json file to your computer, and upload to the app for a prediction. This can be done for any of the wafers given in the original dataset, provided they've been saved as a .json.
 
-Here I use a convolutional neural net to classify semiconductor wafers by one of 8 fault types. The point of doing this, I imagine, is to not only detect which wafers are unfit for use in production, but to also determine which pieces of machinery on the production line need maintenance. If their are a disproportionate number of 'Donut' faults, that most like corresponds to a machine action at a particular stage in the production process. 
+Here I use a convolutional neural net to classify semiconductor wafers by one of 8 fault types. The point of doing this, I imagine, is to not only detect which wafers are unfit for use in production, but to also determine which pieces of machinery on the production line need maintenance. If there are a disproportionate number of 'Donut' faults, that most likely corresponds to a machine action at a particular stage in the production process. 
 
 The NN achieves an overall accuracy of about 88% using 40 epochs. More epochs will top the models out at 92% but with considerable overtraining. The semicon wafers come in various size matrices, and have no depth. They are each characterized by one of eight fault types, and the pixel size ranges from about 100 to over 3000, so a few steps had to be taken to create an effective model. 
 
